@@ -45,6 +45,7 @@ if (isset($_POST['tambah'])) {
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" name="tambah">Simpan</button>
+                <a href="index.php" class="btn btn-secondary">Kembali</a>
             </div>
         </form>
     </div>
