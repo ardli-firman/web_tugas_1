@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once 'CRUD.php';
 $CRUD = new CRUD();
 ?>

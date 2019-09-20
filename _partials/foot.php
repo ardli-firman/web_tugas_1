@@ -6,21 +6,5 @@
 <script>
     $(function() {
         $('#table_id').DataTable();
-
-        $('#modal-edit').on('show.bs.modal', (e) => {
-            let user = $(e.relatedTarget).data('user');
-            $.ajax({
-                url: 'user.php?id=' + user,
-                method: 'get',
-                dataType: 'json',
-                success: (res) => {
-                    $("#modal-edit [name='user_id']").val(res.id)
-                    $("#modal-edit [name='nama']").val(res.nama)
-                    $("#modal-edit [name='username']").val(res.username)
-                    $("#modal-edit [name='password']").val(res.password)
-                    $("#modal-edit [name='email']").val(res.email)
-                }
-            });
-        })
     })
 </script>
