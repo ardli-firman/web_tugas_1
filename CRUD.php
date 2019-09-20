@@ -109,7 +109,7 @@ class CRUD
         $error = [];
         foreach ($data as $key => $value) {
             if ($key != 'tambah' && $key != 'edit') {
-                if ($data[$key] === null) {
+                if ($data[$key] === '') {
                     $error['error'][$key] = ['message' => 'harus diisi'];
                 }
             }
