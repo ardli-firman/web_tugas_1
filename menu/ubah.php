@@ -50,6 +50,7 @@ if (isset($_POST['edit'])) {
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" name="edit">Simpan</button>
+                <a href="index.php" class="btn btn-secondary">Kembali</a>
             </div>
         </form>
     </div>
